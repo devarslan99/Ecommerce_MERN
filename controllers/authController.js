@@ -153,5 +153,17 @@ return res.status(200).send({
 }
 
 
+///////test controller
+
+export const testController=(req,res)=>{
+
+    try {
+    res.send('protected route');
+        
+    } catch (error) {
+        console.log(error);
+        res.send({error});
+    }
+}
 
 
