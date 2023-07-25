@@ -18,8 +18,7 @@ const Register = () => {
     // form function
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        console.log(name,email,password,address,phone);
-        toast.success('Registered successfully')
+        // toast.success('Registered successfully')
 
         try {
             
