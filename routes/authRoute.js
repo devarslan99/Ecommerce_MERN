@@ -12,5 +12,13 @@ router.post('/register',registerController);
 router.post('/login',loginController);
 router.get('/test',requireSignIN,isAdmin,testController);
 
+// protected auth route
+router.get('/user-auth',requireSignIN,(req,res)=>{
+
+res.status(201).send({ok:true});
+
+});
+
+
 
 export default router
